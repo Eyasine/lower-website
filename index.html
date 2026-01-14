@@ -41,6 +41,7 @@
                     colors: {
                         clifford: '#da373d',
                         'justice-primary': '#B68C5A',
+                        'justice-primary-bg': '#111111',
                     }
                 }
             }
@@ -54,7 +55,7 @@
     <!-- header -->
     <header class="container mx-auto">
         <!-- navber -->
-        <nav>
+        <nav class="mb-6">
             <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -304,7 +305,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2">
 
-                    <div class="space-y-3">
+                    <div class="space-y-3 mb-10">
                         <div class="collapse collapse-plus bg-base-100 border border-base-300">
                             <input type="radio" name="my-accordion-3" checked="checked" />
                             <div class="collapse-title font-semibold">Are application fee waivers available?</div>
@@ -323,14 +324,14 @@
                             <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title font-semibold">How do I update my profile information?</div>
                             <div class="collapse-content text-sm">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humour, 
+                                available, but the majority have suffered alteration in some form, by injected humour,
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-base-100 border border-base-300">
                             <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
                             <div class="collapse-content text-sm">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humour, 
+                                available, but the majority have suffered alteration in some form, by injected humour,
                             </div>
 
                         </div>
@@ -361,11 +362,12 @@
                     <h3 class="text-3xl md:text-4xl garamond-font font-bold text-gray-700">Contact With Us</h3>
                     <p class="w-4/5 mx-auto text-sm text-gray-500 mt-4 mb-20">There are many variations of passages of
                         Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected
-                        humour.</p>
+                        humour.
+                    </p>
                 </div>
 
-                <div class="grid grid-cols-2 space-x-8">
-                    <div class="grid grid-cols-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 space-x-8">
+                    <div class="grid grid-cols-2 mb-10">
                         <!-- card 1 -->
                         <div class="card rounded-none bg-gray-100">
 
@@ -436,13 +438,15 @@
                     <div class="space-y-4">
 
                         <input type="text" class="input text-lg bg-gray-100 px-6 py-8 w-full" placeholder="Your Name" />
-                        <input type="text" class="input text-lg bg-gray-100 px-6 py-8 w-full" placeholder="Your Email" />
+                        <input type="text" class="input text-lg bg-gray-100 px-6 py-8 w-full"
+                            placeholder="Your Email" />
                         <input type="text" class="input text-lg bg-gray-100 px-6 py-8 w-full" placeholder="Subject" />
-                        <input type="text" class="input pb-56 text-lg bg-gray-100 px-6 py-8 mb-80 w-full h-60" placeholder="Your Message " />
+                        <input type="text" class="input pb-56 text-lg bg-gray-100 px-6 py-8 mb-80 w-full h-60"
+                            placeholder="Your Message " />
 
                         <button class="btn bg-justice-primary text-white w-full py-8">Send Message</button>
 
-                        
+
 
                     </div>
                 </div>
@@ -456,7 +460,38 @@
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer sm:footer-horizontal bg-justice-primary-bg text-white pt-28 pb-24 md:px-60 lg:px-40 space-x-20 mx-auto">
+
+        <div>
+            <img class="ml-10 mb-6" src="./images/logo.png" alt="">
+            <p class="ml-10 w-80 text-gray-400">There are many variations of <br> passages of Lorem Ipsum <br>available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+        </div>
+        <nav>
+            <h6 class="font-bold text-xl garamond-font text-white mb-4">Usefull Link</h6>
+            <a class="link link-hover text-gray-400">Homes</a>
+            <a class="link link-hover text-gray-400">About Us</a>
+            <a class="link link-hover text-gray-400">Cases</a>
+            <a class="link link-hover text-gray-400">Blog</a>
+            <a class="link link-hover text-gray-400">Contact Us</a>
+        </nav>
+        <nav>
+            <h6 class="font-bold text-xl garamond-font text-white mb-4">Contact Now</h6>
+            <a class="link link-hover text-gray-400">About us</a>
+            <a class="link link-hover text-gray-400">Contact</a>
+            <a class="link link-hover text-gray-400">Jobs</a>
+            <a class="link link-hover text-gray-400">Press kit</a>
+        </nav>
+        <form>
+            <h6 class="font-bold text-xl garamond-font text-white mb-4">Newsletter</h6>
+            <fieldset class="w-80">
+                <p class="text-gray-400 mb-4">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</p>
+                <div class="join relative">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item px-8 py-6" />
+                    <button class="btn bg-justice-primary text-white text-2xl px-5 py-6 rounded-lg absolute ml-56"> <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 
 </body>
 
